@@ -1,0 +1,32 @@
+{
+  "name": "frontend-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "serve": "gulp serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ahmed elbaz",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-rename": "^1.4.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.6.0",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "glob": "^7.1.6",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.3.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-twig": "^1.2.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1"
+  }
+}

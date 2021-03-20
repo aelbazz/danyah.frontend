@@ -1,0 +1,31 @@
+// ===================[ Thiqah Co - FE Engineering Team - 2020 ] 
+// ### =======================  [ Configrations ] ========================== ### //     
+// $mainSiteLang : ar; // active the next variable if you want arabic direction
+// Defenition:: Functions, Variables, Mixins 
+@import "core/initial"; // ::=> Set this partail to defined new style  
+// ### ===================================================================== ### //   
+// ### =============================  [ Core ] ============================= ### //  
+@import "core/base"; // ::=> Dont repeat this partail  
+@import "core/helpers"; // ::=> Dont repeat this partail   
+//ss
+// ### ===================================================================== ### // 
+// ### ============================  [ Vendors ] =========================== ### //  
+// [^\$](left|right|rtl|ltr)[^\}]                     // Partail Author  - MM-DD-YY
+@import "vendors/dynamicBootstrap-4.3.1/bootstrap";
+@import "settings/bootstrapOverride";
+@import "vendors/fontawesome-free-5.15.1/base"; 
+
+
+// @import "vendors/swiper-4.5.0/swiper";
+
+
+// ### ===================================================================== ### // 
+// ### ============================  [ Layouts ] =========================== ### // 
+// @import "layouts/home";                          // Ahmed Elbaz  - 7-11-2018 
+
+
+// ### ===================================================================== ### // 
+// ### ============================  [ Modules ] =========================== ### // 
+// ###  ============  [ Common ]  
+@import "modules/base"; // Mandatory Components Ahmed Elbaz  - 05-18-2018 
+

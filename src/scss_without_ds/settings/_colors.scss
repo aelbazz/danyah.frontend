@@ -1,0 +1,90 @@
+// Bootsrtap themes colors
+// =======================
+$primary: #007bff; // ==== $primary  ====
+$secondary: #6c757d; // ==== secondary ====
+$tertiary: #6f42c1; // ==== tertiary ====
+$success: #28a745; // ==== success   ====  
+$info: #17a2b8; // ==== info      ====     
+$warning: #ffc107; // ==== warning   ====  
+$danger: #dc3545; // ==== danger    ====
+$light: #f8f9fa; // ==== light     ====
+$dark: #343a40; // ==== dark      ==== 
+
+// ====================  HandOff Colors
+$primary: #6E1946; // ==== $primary  ====  
+$secondary: #EB5A3C; // ==== secondary ====  
+$tertiary: #0F2837; // ==== tertiary ====  
+$success: #78AD60; // ==== success   ====  
+$info: #2783BC; // ==== info      ====     
+$warning: #F3BC47; // ==== warning   ====  
+$danger: #B41932; // ==== danger    ==== 
+$light: #ffffff; // ==== light     ====
+$dark: #343a40; // ==== dark      ==== 
+
+// Body
+//
+// Settings for the `<body>` element. 
+$body-bg: #ffffff;
+$body-color:  $tertiary;
+
+// Links
+// Style anchor elements.
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+// Texts 
+$txt: $body-color;
+$txt2: $light;
+$txt3: #999999;
+$icons : #f7ffe8;
+$section-bg : #FAFCFC;
+$header-color: #fff2f8;
+
+// ==================== UX Pallete color
+$pallete1: $primary !default;
+$pallete2: darken(saturate(adjust-hue($primary, -3deg), 18), 13);
+$pallete2: #005850 !default;
+$pallete3: darken(desaturate(adjust-hue($primary, -7deg), 66), 7);
+$pallete3: #324542 !default;
+$pallete4: saturate($primary, 1);
+$pallete4: #0D8A86 !default;
+$pallete-se1: $secondary !default;
+$pallete-se2: lighten(desaturate(adjust-hue($primary, -7deg), 66), 28);
+$pallete-se2: #82A5A0 !default;
+$pallete-se3: #9B6D85; //#864769; 
+$pallete-se3: #4A6763 !default; 
+$pallete-se4: #B41932 !default;
+
+// ============================
+$custom-control-indicator-disables-checked-color: lighten(desaturate(adjust-hue($primary, -7deg), 70), 15);
+$input-color: $pallete3;
+
+// ========================= Iman Custom DropDownMenu
+$custom-dropdown-link-color: $pallete3;
+$custom-dropdown-link-hover-bg: #E6F3F2;
+
+//======== Pagination Variables Iman
+$custom-pagination-color: $pallete-se3;
+$custom-pagination-active-color: $primary;
+$custom-pagination-active-border-color: #DFE5E4;
+$custom-pagination-disabled-color: #9AB6B2;
+
+//======== Table Variables Iman
+$custom-table-th-color: $pallete3;
+$custom-table-td-color: $pallete-se3;
+$custom-table-thead-bg: #f2f6f5;
+$custom-table-bg-th-color: darken(saturate(adjust-hue($primary, -3deg), 18), 13);
+$custom-table-bg-th-color: $pallete2;
+$custom-table-border-color: #DFE5E4;
+$custom-table-icon-color: #98A2A0;
+$custom-table-lg-td-color: #758B88;
+$custom-table-lg-header-tr-color: $pallete4;
+$custom-table-control-label: #5B7E79;
+$custom-table-card-border-color: #E9EDEF;
+$custom-table-hint-color: #52726E;
+$custom-table-title-color: $pallete2;
+
+// Wizard Component 
+$wizard-item: lighten( desaturate( adjust-hue( $primary, -11deg ), 16 ), 11 );

@@ -1,0 +1,33 @@
+@mixin icon-rotate($degrees, $rotation) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation})";
+  transform: rotate($degrees);
+}
+
+@mixin icon-flip($horiz, $vert, $rotation) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation}, mirror=1)";
+  transform: scale($horiz, $vert);
+}
+$x-prefix: icon;
+// Rotated & Flipped Icons
+// -------------------------
+
+.#{$x-prefix}-rotate-90  { @include icon-rotate(90deg, 1);  }
+.#{$x-prefix}-rotate-180 { @include icon-rotate(180deg, 2); }
+.#{$x-prefix}-rotate-270 { @include icon-rotate(270deg, 3); }
+
+.#{$x-prefix}-flip-horizontal { @include icon-flip(-1, 1, 0); }
+.#{$x-prefix}-flip-vertical   { @include icon-flip(1, -1, 2); }
+.#{$x-prefix}-flip-horizontal.#{$x-prefix}-flip-vertical { @include icon-flip(-1, -1, 2); }
+
+// Hook for IE8-9
+// -------------------------
+
+:root {
+  .#{$x-prefix}-rotate-90,
+  .#{$x-prefix}-rotate-180,
+  .#{$x-prefix}-rotate-270,
+  .#{$x-prefix}-flip-horizontal,
+  .#{$x-prefix}-flip-vertical {
+    filter: none;
+  }
+}

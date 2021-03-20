@@ -1,0 +1,65 @@
+@function empty($value) {
+    @if not $value or $value==""
+
+    or $value==0 or $value==() or length($value)==0 {
+        @return true;
+    }
+
+    @return false;
+}
+
+// mixins  for en or ar code  
+@mixin default() {
+    @if $mainSiteLang==$default-lang {
+        @content;
+    }
+}
+
+@mixin reverse() {
+    @if $mainSiteLang==$reverse-lang {
+        @content;
+    }
+}
+
+$img-path : '#{$branding-path}images';
+$icons-path : '#{$img-path}/icons';
+$fontFolder-path : '#{$branding-path}fonts';
+$fonts-map: ((family: 'Cairo',
+        weight: 200,
+        weightName:'Ligth',
+        path: 'cairo/Cairo-Ligth'
+    )) !default;
+
+@mixin setFontFamily($fFamily:'', $fWeight: 400, $full-path:'') {
+   @at-root{
+    @font-face {
+        font-family: '#{$fFamily}';
+        src: url('#{$full-path}.eot');
+        /* IE9 Compat Modes */
+        src: url('#{$full-path}.eot?#iefix') format('embedded-opentype'),
+        url('#{$full-path}.woff2') format('woff2'),
+        url('#{$full-path}.woff') format('woff'),
+        url('#{$full-path}.ttf') format('truetype');
+        font-weight: $fWeight;
+        font-style: normal;
+    }
+   }
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+
+// Bootsrtap themes colors ( Aliases )
+// =======================
+$pri: $primary   ; // ==== $primary  ====
+$sec: $secondary ; // ==== secondary ====
+$ter: $tertiary  ; // ==== tertiary  ====
+$suc: $success   ; // ==== success   ====  
+$inf: $info      ; // ==== info      ====     
+$war: $warning   ; // ==== warning   ====  
+$dan: $danger    ; // ==== danger    ====
+$lig: $light     ; // ==== light     ====
+$dar: $dark      ; // ==== dark      ==== 

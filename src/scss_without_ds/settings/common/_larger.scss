@@ -1,0 +1,28 @@
+// Icon Sizes
+// -------------------------
+$text-prefix:'t';
+// makes the font 33% larger relative to the icon container
+.#{$text-prefix}-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -.0667em;
+}
+
+.#{$text-prefix}-md {
+  font-size: .875em;
+}
+
+.#{$text-prefix}-sm {
+  font-size: .75em;
+}
+
+.#{$text-prefix}-xs {
+  font-size: .6em;
+}
+
+
+@for $i from 1 through 10 {
+  .#{$text-prefix}-#{$i}x {
+    font-size: $i * 1em;
+  }
+}

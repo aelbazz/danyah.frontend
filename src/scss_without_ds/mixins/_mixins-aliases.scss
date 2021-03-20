@@ -1,0 +1,21 @@
+// Creating SASS mixins aliases
+@mixin br ($radius){
+  @include border-rad($radius: $border-radius) ;
+}
+
+// Single side border-radius
+@mixin br-t ($radius){
+  @include border-top-rad($radius);
+}
+
+@mixin br-r ($radius){
+  @include border-right-rad($radius) ;
+}
+
+@mixin br-b ($radius){
+  @include border-bottom-rad($radius) ;
+}
+
+@mixin br-l ($radius){
+  @include border-left-rad($radius);
+}

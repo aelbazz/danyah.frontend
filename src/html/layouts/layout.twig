@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<title> </title>
+		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<meta name='viewport' content='width=device-width, initial-scale=1'> 
+		<link rel='stylesheet' role="dirStyle" type='text/css' media='screen' href='/node_modules/ds-moc/css/ltr/style.css'>
+		<link rel='stylesheet' role="dirStyle" type='text/css' media='screen' href='assets/css/ltr/style.css'>
+		<!-- Head block -->
+		{% block head %}{% endblock %}
+	</head> 
+		<body>
+		{% include '../master/header.twig' %}
+		<main
+			class="mainContent">
+			<!-- Head block -->
+			{% block page %}{% endblock %}
+			<!-- Head block -->
+			
+		</main>
+		{% include '../master/footer.twig' %}
+		{% include '../core/compiler-footer.twig' %}
+		{% include '../master/scripts.twig' %}
+
+		
+		
+
+{% block beforeEndBody %}{% endblock %}
+	</body>
+
+</html>

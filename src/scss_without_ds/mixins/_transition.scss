@@ -1,0 +1,98 @@
+//  
+//  @mixin transition($property:all, $duration:0.3s, $function:ease, $delay:0.1s) {
+//  	-webkit-transition: $property $duration $function $delay;
+//  	-moz-transition: $property $duration $function $delay;
+//  	-ms-transition: $property $duration $function $delay;
+//  	-o-transition: $property $duration $function $delay;
+//  	transition: $property $duration $function $delay;
+//  }
+//  
+@mixin trans($property:all, $duration:0.3s, $function:ease, $delay:0.1s) {
+	-webkit-transition: $property $duration $function $delay;
+	-moz-transition: $property $duration $function $delay;
+	-ms-transition: $property $duration $function $delay;
+	-o-transition: $property $duration $function $delay;
+	transition: $property $duration $function $delay;
+}
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+// rotate
+@mixin rotateX ($deg) {
+  @include transform(rotateX(#{$deg}deg));
+}
+// rotate
+@mixin rotateY ($deg) {
+  @include transform(rotateY(#{$deg}deg));
+}
+ 
+// scale
+@mixin scale($scale) {
+	 @include transform(scale($scale));
+} 
+// scaleX
+@mixin scaleX($scale) {
+  @include transform(scaleX($scale));
+}
+// scaleY
+@mixin scaleY($scale) {
+  @include transform(scaleY($scale));
+}
+// translateX
+@mixin translateX ($x) {
+	@include transform(translateX($minus*$x));
+}
+// translateY
+@mixin translateY ($y) {
+	@include transform(translateY($y));
+}
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translateX($x) translateY($y));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+	     -o-transform-origin: $origin;
+	    -ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+          transform-origin: $origin;
+} 
+
+
+@mixin animate($duration, $timing-function, $name, $delay:null, $count:null, $direction:null, $fill-mode:null, $play-state:null,$property:null ) {
+	-webkit-animation: $duration $timing-function $name $delay $count $direction $fill-mode $play-state;
+			animation: $duration $timing-function $name $delay $count $direction $fill-mode $play-state;
+}
+
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin flip(){
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        @include transform(scaleX(-1));
+}

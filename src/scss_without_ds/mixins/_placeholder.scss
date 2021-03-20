@@ -1,0 +1,21 @@
+@mixin placeholder ( $selector ) {
+    #{$selector}::-webkit-input-placeholder {
+        /* WebKit browsers */
+        @content;
+    }
+
+    #{$selector}:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        @content;
+    }
+
+    #{$selector}::-moz-placeholder {
+        /* Mozilla Firefox 19+ but I'm not sure about working */
+        @content;
+    }
+
+    #{$selector}:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        @content;
+    }
+}

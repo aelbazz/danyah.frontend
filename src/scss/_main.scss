@@ -1,0 +1,9 @@
+// @import "../../node_modules/bootstrap/scss/bootstrap";// change this  import by [Design Stystem] examples =>ds-moc, ds-sasso, ds-ms .....
+// @import "../scss_without_ds/main";// change this  import by [Design Stystem] examples =>ds-moc, ds-sasso, ds-ms .....
+@import "../../node_modules/ds-moc/scss/init"; 
+@import "modules/hero"; 
+@import "modules/license";
+@import "modules/speech";
+.header{
+    z-index: 5;
+}

@@ -1,0 +1,15 @@
+@mixin coverer {
+    position: absolute;
+    top: 0;
+    #{$left}: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  // <div class="overlay"></div>
+  
+  // .overlay {
+  //   @include coverer;
+  //   background: rgba(black, 0.5);
+  //   z-index: 1000;
+  // }

@@ -1,0 +1,53 @@
+@mixin breakpoint($point) {
+  @if $point == xs {														// min width : 576px
+    @media (min-width: 576px) { @content; }
+  }
+
+  @else if $point == sm {													// min width : 768px
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if $point == md {														// min width : 992px
+    @media (min-width: 992px)  { @content; }
+  }
+
+  @else if $point == lg {													// min width : 1200px
+    @media (min-width: 1200px)  { @content; }
+  }
+
+   @else if $point == xl {													// min width : 1400px
+    @media (min-width: 1400px)  { @content; }
+  }
+
+  @else if $point == isMiniMobile {										  	//  max width 576px
+  @media  (max-width: 575px) { @content; }
+  }
+
+  @else if $point == isMobile {													//min width : 319px -- max width 767px
+	@media (min-width: 319px) and (max-width: 767px) { @content; }
+  }
+
+
+  @else if $point == isTablet {													//min width : 767px -- max width 991px
+	@media (min-width: 767px) and (max-width: 991px) { @content; }
+  }
+
+  @else if $point == isCommon {													//min width : 319px -- max width 991px
+	@media (min-width: 319px) and (max-width: 991px) { @content; }
+  }
+
+  @else if $point == isTabletPro {													//min width : 991px -- max width 1024px Ipad Pro
+	@media only screen and (min-device-width: 991px) and (max-device-width: 1024px){ @content; }
+  }
+
+  @else {													// min width : 1400px
+    @media (min-width: $point)  { @content; }
+  }
+}
+// /////////////////////// new version
+@mixin bp($point) {
+  @include breakpoint($point){
+    @content;
+  };
+}
+

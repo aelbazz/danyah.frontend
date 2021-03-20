@@ -1,0 +1,42 @@
+{
+    "liveServer.settings.port": 5503,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "node_modules": true,   
+        "src/html": false,   
+        "bin": true,
+        "obj": true,
+        "dist": false,
+        "Properties": true,
+        ".vs": true,
+        "*.csproj": true,
+        "*.sln": true,
+        "*.csproj.user": true,
+        "*.suo": true
+    },
+    "liveSassCompile.settings.formats":[
+        // This is Default.
+        {
+            "format": "expanded",
+            "extensionName": ".css" 
+        },
+        // // You can add more
+        // {
+        //     "format": "compressed",
+        //     "extensionName": ".min.css" 
+        // },
+        // More Complex
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/dist/css/"
+        }
+    ],
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 4 versions"
+    ]
+}

@@ -1,0 +1,17 @@
+.hero {
+    padding-top: 40px;
+    padding-bottom: 120px;
+    $hero-side-bg-src: defaultOrReverse("license_platform/hero-side-bg-left.svg", "license_platform/hero-side-bg-right.svg");
+    background: image($hero-side-bg-src) no-repeat defaultOrReverse(-180px, calc(100% + 180px)) bottom;
+    
+
+    &-details {
+        padding-top: 100px;
+    }
+
+    &-desc {
+        margin-bottom: 15px; 
+        font-weight: 500; 
+
+    }
+}

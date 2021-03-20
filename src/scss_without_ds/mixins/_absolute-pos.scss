@@ -1,0 +1,49 @@
+
+@mixin absolute-position ($t: auto, $r: auto, $b: auto, $l: auto) {
+  position: absolute;
+  top: $t;
+  #{$right}: $r;
+  bottom: $b;
+  #{$left}: $l;
+}
+@mixin abs ($t: auto, $r: auto, $b: auto, $l: auto) {
+  @include absolute-position ($t, $r, $b, $l);
+}
+@mixin text-shorten {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+@mixin arrow($dir: bottom, $size: 5px, $color: #555) {
+  width: 0;
+  height: 0;
+  @if ($dir == left) {
+     border-top: $size solid transparent;
+     border-bottom: $size solid transparent; 
+     border-#{$right}: $size solid $color;
+  }
+  @else if ($dir == right) {
+     border-top: $size solid transparent;
+     border-bottom: $size solid transparent; 
+     border-#{$left}: $size solid $color;
+  }
+  @else if ($dir == bottom) {
+     border-left: $size solid transparent;
+     border-right: $size solid transparent;
+     border-top: $size solid $color;
+  }
+  @else {
+     border-left: $size solid transparent;
+     border-right: $size solid transparent;
+     border-bottom: $size solid $color;
+  }
+}
+
+
+ 

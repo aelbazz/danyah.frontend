@@ -1,0 +1,38 @@
+//* custom branding
+//* Author  :: Ahmed elbaz
+//* Data    :: 1-14-2019
+//* LinkedIn:: in/elbazz
+//* Mail    :: ahmed.elbazz.2010@gmail.com
+// ==============================================================
+// $reverse-lang: en;
+// $mainSiteLang : en !default; 
+// @if $default-behaviour == true { $reverse-lang: ar; }  
+
+// // use this variable as default for left to right in english
+// $left: left; $right: right; $left: left; $right: right; $minus: 1; $dir : ltr; $dirInv : rtl; $font-family : $font-family-default; $font-numbers: $font-numbers-default; $fonts-map: $fonts-map-default;
+
+// // change variable when dir is right to left in arabic 	
+// @if $mainSiteLang == $reverse-lang { $left: right; $right: left; $left: right; $right: left; $minus: -1; $dir: rtl; $dirInv: ltr;  $font-family: $font-family-reverse; $font-numbers: $font-numbers-reverse; $fonts-map: $fonts-map-reverse;}
+
+// // mixins for en or ar code  
+// @mixin default() { @if $mainSiteLang!=$reverse-lang { @content; } }
+// @mixin reverse() { @if $mainSiteLang==$reverse-lang { @content; } } 
+
+$branding-path: '../../' !default; 
+$default-behaviour : true  !default;
+
+$mainSiteLang: en !default; 
+$default-lang: en;
+$reverse-lang: ar;
+@if $default-behaviour == false { 
+    $default-lang: ar;
+    $reverse-lang: en;
+}
+$left: left  !default; $right: right  !default;  
+$dir : ltr !default; $dirInv : rtl !default; $font-numbers: arial !default; $fonts-map: $fonts-map-default;$font-family-base:"hhhhh";
+
+// use this variable as default for left to right in english
+@if $mainSiteLang == $default-lang { $left: left; $right: right;$minus: 1; $dir : ltr; $dirInv : rtl; $font-family-base: $font-family-default; $font-numbers: $font-numbers-default; $fonts-map: $fonts-map-default;}
+
+// change variable when dir is right to left in arabic 	
+@if $mainSiteLang == $reverse-lang { $left: right; $right: left;$minus: -1; $dir: rtl; $dirInv: ltr; $font-family-base: $font-family-reverse; $font-numbers: $font-numbers-reverse; $fonts-map: $fonts-map-reverse;}

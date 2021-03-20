@@ -1,0 +1,46 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-help {
+    cursor: help;
+}
+
+.cursor-move {
+    cursor: move;
+}
+
+.cursor-disable {
+    cursor: no-drop;
+}
+
+svg.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.btn.btn-icon {
+    background-color: transparent;
+    padding: 0;
+
+    &:focus,
+    &.focus {
+            /* outline: none; */
+    box-shadow: none;
+    }
+}
+
+
+.show {
+    &-isEnglish {
+        display: defaultOrReverse(inline-block, none);
+    }
+
+    &-isArabic {
+        display: defaultOrReverse(none, inline-block);
+    }
+}

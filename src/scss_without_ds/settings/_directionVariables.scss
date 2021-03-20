@@ -1,0 +1,19 @@
+// /*
+// * variables will return reverse if reverse else default 
+// * first pram default
+// * second pram is reverse
+// * Example
+// * $name: defaultOrReverse("english", "arabic");
+// * .test {
+// *     content: "#{$name}";
+// * }
+// * // Default css outbut
+// * .test{
+// *     content: "english";
+// * }
+// * // Reverse css outbut
+// * .test{
+// *     content: "arabic";
+// * }
+// */
+$minus: defaultOrReverse(1, -1);
