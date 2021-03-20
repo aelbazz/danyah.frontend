@@ -1,0 +1,10 @@
+.form-control {
+    border-width: 0 0 1px 0;
+
+    @at-root .was-validated &:valid:focus,
+    .was-validated &:invalid:focus,
+    &.is-invalid:focus,
+    &.is-valid:focus {
+        box-shadow: none;
+    }
+}

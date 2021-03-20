@@ -1,0 +1,55 @@
+//==  branding from css to root branding 
+$branding-path:'../../';
+
+$default-behaviour: true; //  true or false : true is recommended
+$fa : FontAwesome;
+$fa-font-path: $branding-path+"fonts/fontawesome";
+$mdi: 'Material Design Icons';
+//== font-families
+//
+// font family 
+$defaultFont: 'FrutigerLTArabic';
+$font-family-default: $defaultFont,
+sans-serif;
+$font-numbers-default : Myriad Pro,
+Arial,
+sans-serif;
+$fonts-map-default: ((family: '#{$defaultFont}',
+        weight: 200,
+        weightName:'Light',
+    ),
+    (family: '#{$defaultFont}',
+        weight: 400,
+        path: '#{$defaultFont}/#{$defaultFont}-Regular'
+    ),
+    // (family: '#{$defaultFont}',
+    //     weight: 500,
+    //     path: '#{$defaultFont}/#{$defaultFont}-Medium'
+    // ),
+    (family: '#{$defaultFont}',
+        weight: 700,
+        path: '#{$defaultFont}/#{$defaultFont}-Bold'
+    ));
+// font family 
+$reverseFontName: 'FrutigerLTArabic';
+$font-family-reverse: '#{$reverseFontName}',
+sans-serif;
+$font-numbers-reverse : Myriad ar,
+Arial,
+sans-serif;
+$fonts-map-reverse: ((family: '#{$reverseFontName}',
+        weight: 200,
+        weightName:'Light',
+    ),
+    (family: '#{$defaultFont}',
+        weight: 400,
+        path: '#{$defaultFont}/#{$defaultFont}-Regular'
+    ),
+    // (family: '#{$defaultFont}',
+    //     weight: 500,
+    //     path: '#{$defaultFont}/#{$defaultFont}-Medium'
+    // ),
+    (family: '#{$reverseFontName}',
+        weight: 700,
+        path: '#{$reverseFontName}/#{$reverseFontName}-Bold'
+    ));

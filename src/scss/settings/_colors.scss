@@ -1,0 +1,59 @@
+// Bootsrtap themes colors
+// =======================
+$primary: #007bff; // ==== $primary  ====
+$secondary: #6c757d; // ==== secondary ====
+$tertiary: #6f42c1; // ==== tertiary ====
+$success: #28a745; // ==== success   ====  
+$info: #17a2b8; // ==== info      ====     
+$warning: #ffc107; // ==== warning   ====  
+$danger: #dc3545; // ==== danger    ====
+$light: #f8f9fa; // ==== light     ====
+$dark: #343a40; // ==== dark      ==== 
+
+// ====================  HandOff Colors
+$primary: #6E1946; // ==== $primary  ====  
+$secondary: #EE7A49; // ==== secondary ====  
+$tertiary: #E21A8E; // ==== tertiary ====  
+$success: #95c93d; // ==== success   ====  
+$info: #40b4e5; // ==== info      ====     
+$warning: #EDBB55; // ==== warning   ====  
+$danger: #B41932; // ==== danger    ==== 
+$light: #ffffff; // ==== light     ====
+$dark: #333e48; // ==== dark      ==== 
+
+// Body
+//
+// Settings for the `<body>` element. 
+$body-bg: #ffffff;
+$body-color:  #212529;
+
+// Links
+// Style anchor elements.
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+// Texts 
+$txt: $body-color;
+$txt2: $light;
+$txt3: #999999;
+$icons : #f7ffe8;
+$section-bg : #FAFCFC;
+$header-color: #fff2f8;
+
+// ==================== UX Pallete color
+$pallete1: #489490;
+// $pallete2: darken(saturate(adjust-hue($primary, -3deg), 18), 13);
+// $pallete2: #005850 !default;
+// $pallete3: darken(desaturate(adjust-hue($primary, -7deg), 66), 7);
+// $pallete3: #324542 !default;
+// $pallete4: saturate($primary, 1);
+// $pallete4: #0D8A86 !default;
+// $pallete-se1: $secondary !default;
+// $pallete-se2: lighten(desaturate(adjust-hue($primary, -7deg), 66), 28);
+// $pallete-se2: #82A5A0 !default;
+// $pallete-se3: #9B6D85; //#864769; 
+// $pallete-se3: #4A6763 !default; 
+// $pallete-se4: #B41932 !default;
+ 
