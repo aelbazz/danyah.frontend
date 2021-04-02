@@ -1,0 +1,36 @@
+.l-coffeebeans {
+    margin-bottom: 100px;
+}
+ 
+.coffeebeans {
+    position: relative;
+    display: block;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    @include trans();
+    overflow: hidden;
+
+    &-wrapper{
+        padding-top: 30px;
+    }
+    &-cover { 
+        height: 220px;
+        &:hover{
+        transform: scale(1.1); 
+    }
+    }
+    
+    &-title { 
+        color: $dark;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom:15px
+    }
+    p {
+        color:$dark;
+        font-size: 12px;
+        margin-bottom:20px;
+    }
+
+}
