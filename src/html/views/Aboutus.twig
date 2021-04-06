@@ -1,9 +1,8 @@
 {% extends "../layouts/layout.twig" %} 
+
+
+{% import "../common/article.twig" as article %}
 {% block page %} 
-	<div
-		class="container mb-5">
-		<!-- Content  - ## START ##-->  
-		<!-- Content  - ## END ##-->
-	{# {% include '../master/footer.twig' %} #}
-	</div>
+	{{article.base("","<strong>Danyah</strong>  is a Saudi Brand that was established as a
+					result of our deep belief that technology should be utilized for an easier form of life.")}}
 {% endblock %}

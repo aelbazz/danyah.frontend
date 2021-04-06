@@ -1,0 +1,17 @@
+<svg id="Group_808" data-name="Group 808" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.644 120.522">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Path_399" data-name="Path 399" class="cls-1" d="M79.7,0H1.944A1.837,1.837,0,0,0,0,1.944V118.578a1.837,1.837,0,0,0,1.944,1.944H79.7a1.837,1.837,0,0,0,1.944-1.944V1.944A1.837,1.837,0,0,0,79.7,0ZM77.756,58.317H54.429V3.888H77.756Zm0,19.439h-31.1V62.2h31.1ZM42.766,79.7v5.832H33.241L34.8,69.98h4.082V66.093H7.776V69.98h4.082l1.555,15.551H3.888V62.2H42.766ZM30.13,77.756H16.523l-.778-7.776H30.908ZM16.912,81.644h12.83l-.389,3.888H17.3ZM3.888,58.317v-31.1H42.766v31.1Zm4.665-34.99L27.992,3.888H42.766V23.327Zm-4.665-.778V14.385l10.5-10.5h8.164Zm0,66.87H42.766v8.942L41.6,99.528a25.3,25.3,0,0,1-17.884,7.387h-.778A25.64,25.64,0,0,1,5.054,99.528L3.888,98.361ZM46.654,3.888h3.888V58.317H46.654Zm-37.712,0L3.888,8.942V3.888ZM3.888,103.61a28.674,28.674,0,0,0,19.05,7.192h.778a28.674,28.674,0,0,0,19.05-7.192v13.024H3.888Zm42.766,13.024V81.644h31.1v34.99Z"/>
+  <path id="Path_400" data-name="Path 400" class="cls-1" d="M37.663,46A11.663,11.663,0,1,0,49.327,57.663,11.7,11.7,0,0,0,37.663,46Zm0,19.439a7.776,7.776,0,1,1,7.776-7.776A7.8,7.8,0,0,1,37.663,65.439Z" transform="translate(24.541 43.419)"/>
+  <rect id="Rectangle_537" data-name="Rectangle 537" class="cls-1" width="3.888" height="3.888" transform="translate(7.776 31.102)"/>
+  <rect id="Rectangle_538" data-name="Rectangle 538" class="cls-1" width="23.327" height="3.888" transform="translate(15.551 31.102)"/>
+  <rect id="Rectangle_539" data-name="Rectangle 539" class="cls-1" width="3.888" height="3.888" transform="translate(7.776 38.878)"/>
+  <rect id="Rectangle_540" data-name="Rectangle 540" class="cls-1" width="23.327" height="3.888" transform="translate(15.551 38.878)"/>
+  <rect id="Rectangle_541" data-name="Rectangle 541" class="cls-1" width="3.888" height="3.888" transform="translate(7.776 46.654)"/>
+  <rect id="Rectangle_542" data-name="Rectangle 542" class="cls-1" width="23.327" height="3.888" transform="translate(15.551 46.654)"/>
+</svg>

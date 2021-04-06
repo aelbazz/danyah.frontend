@@ -1,6 +1,23 @@
+@import "article";
  // ###  ============  [ Master page ]  
 @import "master/header";
 @import "master/footer";
 
 @import "home/products"; 
+@import "home/services";
+
+// Products *********************
+@import "products/coffee-beans"; 
+@import "products/coffee-capsules"; 
+
+// Machines  *********************
+@import "machines/machines";
+@import "machines/features";
+
+// Spare  *********************
+@import "spare/spare";
+
+
+
+
  

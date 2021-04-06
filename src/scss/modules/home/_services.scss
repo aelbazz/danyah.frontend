@@ -1,0 +1,26 @@
+.l-ourservices {
+    margin-bottom: 100px;
+    text-align: center;
+}
+ 
+.service {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+    @include trans();
+
+    &-wrapper{
+        padding-top: 30px;
+    }
+
+    &-cover { 
+        height: 65px;
+    }
+    
+    &-title { 
+        padding: 15px 0 25px;
+        color: $dark;
+    }
+
+}
