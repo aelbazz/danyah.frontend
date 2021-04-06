@@ -1,0 +1,25 @@
+.footer {
+    background-color: rgb(219, 217, 214);
+    padding: 30px 60px 10px;
+    font-size: 100%;
+    color: rgb(51, 62, 72);
+
+    &-copyright {
+        text-align: center;
+        font-size: 14px;
+        color: rgb(51, 62, 72);
+    }
+
+    &-callIcon{
+        height: 70px;
+    }
+
+    &-logo {
+        margin-top: 20px;
+        .image {
+            height: 75px;
+            display: inline-block;
+
+        }
+    }
+}

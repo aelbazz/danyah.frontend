@@ -1,8 +1,11 @@
 {% extends "../layouts/layout.twig" %} 
+{% import "../common/article.twig" as article %}
 {% block page %}  
 		<!-- Content  - ## START ##-->  
 
-		{% include '../modules/article.twig' %}
+		{{article.base("  At Danyah, we offer our valued partners a wide range of top of the line and affordable
+        tabletops."," Our Italian made machines will suit your needs and create the perfect and
+          productive environment that you deserve!")}}
 		<!-- Content  - ## END ##-->
 	 
 
