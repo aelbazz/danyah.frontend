@@ -1,11 +1,92 @@
-.header {
-    position: relative;
-    width: 100%; 
-    padding: 20px 0;
-    background-color: #343F49;
-    // padding-#{$left}: 50px;
-    // float: #{$left};
-    border-#{$right}: 50px solid #f00;
- 
+$header-bg: #343F49;
+
+.is-sticky_header {
+    .header{
+        box-shadow: 0 2px 6px 3px rgba(#000000, .3) ;
+    }
+    .header-logo .image {
+        height: 60px;
+
+    }
 }
- 
+
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 0px 50px;
+    background-color: $header-bg; 
+
+    &-logo {
+        .image {
+            @include trans();
+            height: 120px;
+        }
+
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            margin-#{$left}: 40px;
+
+            .nav-link {
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                padding: 10px 0;
+
+                &:before {
+                    background: $success;
+                }
+            }
+
+            &.active {
+                .nav-link:not(.btn) {
+                    color: $success;
+                    font-size: 18px;
+
+                    &:before {
+                        content: none;
+                    }
+                }
+
+                .btn-outline-info {
+                    background-color: $info;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            padding: 0;
+            border: 0;
+            box-shadow: 0 2px 7px 1px rgba(#000000, .15);
+            border-radius: 0;
+
+            .dropdown-item {
+                padding: 10px 25px;
+                color: #999999;
+                @include trans();
+
+                &:hover,
+                &:focus {
+                    color: $success;
+                }
+
+                ;
+            }
+        }
+
+    }
+
+}
+
+.header-menu.show {
+    position: absolute;
+    top: 50px;
+    background-color: darken($color: $header-bg, $amount: 10%);
+}
