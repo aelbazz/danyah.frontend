@@ -8,20 +8,40 @@
 }
 
 .spare {
+    padding: 10px 40px ;
+    @media only screen and (max-width: 768px) {
+        padding: 10px  !important;
+    }
 
     &-wrapper {
-
+        text-align: center;
+        .first {
+            width: 50% !important;
+            margin: 0 auto;
+            @media only screen and (max-width: 768px) {
+                width: 100% !important;
+            }
+        }
     }
 
     &-cover {  
-
+        width: 40px;
+        height: 40px;
     }
 
     &-title {
-
+        font-size: 14px;
+        font-weight: bold;
+        padding: 15px 10px;
     }
     &-desc {
-    
+        font-size: 13px;
+        color: $txt3;
+        font-weight: lighter;
+        padding: 5px 60px 20px;
+        @media only screen and (max-width: 768px) {
+            padding: 5px 20px !important;
+        }
     }
 }
  

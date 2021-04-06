@@ -1,10 +1,11 @@
 {% extends "../layouts/layout.twig" %} 
+{% import "../common/article.twig" as article %}
 {% block page %} 
-	<div
-		class="container mb-5">
-		<!-- Content  - ## START ##--> 
+		<!-- Content  - ## START ##-->
+
+		{{article.base("  At Danyah, we are proud of our Vending Machines and the quality conditions."," So, we can't have you go with maintenance with parts that are less quality than the machines. Here are some of the essential parts that are rapidly ordered.")}}
+
 			{% include '../modules/spare/spare.twig' %} 
 		<!-- Content  - ## END ##-->
-	</div>
 
 {% endblock %}
