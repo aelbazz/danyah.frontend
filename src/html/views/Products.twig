@@ -1,13 +1,13 @@
 {% extends "../layouts/layout.twig" %} 
+{% import "../common/article.twig" as article %}
 {% block page %} 
-	<div
-		class="container mb-5">
 		<!-- Content  - ## START ##-->  
+
+		{{article.base("At Danyah, we are also very passionate about coffee products. "," This is why we are very proud to offer our partners high quality coffee beans, powder and even capsules, straight from our suppliers in Italy. These products can be used to supply the vending machines or even for your personal daily use.")}}
 	 
 		{% include '../modules/CoffeeProducts/coffeebeans.twig' %}
 		{% include '../modules/CoffeeProducts/coffeecapsules.twig' %}
 
 		<!-- Content  - ## END ##-->
-	</div>
 
 {% endblock %}

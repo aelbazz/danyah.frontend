@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.45 102.53">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: rgba(255,255,255,0);
+        stroke: #da3697;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_777" data-name="Group 777" transform="translate(21 -25.17)">
+    <ellipse id="Ellipse_18" data-name="Ellipse 18" class="cls-1" cx="30.462" cy="30.462" rx="30.462" ry="30.462" transform="translate(11.527 27.17)"/>
+    <path id="Path_403" data-name="Path 403" class="cls-2" d="M54.97,59.7c0,7.274-5.91,11.236-13.185,11.236S28.6,66.974,28.6,59.7" transform="translate(0.203 4.947)"/>
+    <ellipse id="Ellipse_20" data-name="Ellipse 20" class="cls-3" cx="30" cy="29" rx="30" ry="29" transform="translate(-19 66)"/>
+    <ellipse id="Ellipse_19" data-name="Ellipse 19" class="cls-1" cx="30.462" cy="30.462" rx="30.462" ry="30.462" transform="translate(-19 64.777)"/>
+    <path id="Path_404" data-name="Path 404" class="cls-2" d="M54.97,197.736c0-7.274-5.91-11.236-13.185-11.236S28.6,190.462,28.6,197.736" transform="translate(-30.323 -84.312)"/>
+  </g>
+</svg>
