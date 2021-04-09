@@ -1,8 +1,10 @@
-@import "article";
+@import "common/article";
  // ###  ============  [ Master page ]  
-@import "master/header";
-@import "master/footer";
-
+ @import "master/header";
+ @import "master/footer";
+ 
+ // ###  ============  [ Home page ]  
+@import "home/hero"; 
 @import "home/products"; 
 @import "home/services";
 

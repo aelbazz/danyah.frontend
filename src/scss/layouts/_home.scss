@@ -1,0 +1,21 @@
+.l-home {
+    background: image("home/Background.svg") defaultOrReverse(-370px, calc(100% + 370px)) 50px/1000px no-repeat;
+
+    .l-hero {
+        padding-top: 150px;
+        padding-bottom: 200px;
+    }
+
+    .l-ourproducts {
+        padding-top: 150px;
+        padding-bottom: 200px;
+    }
+
+    .l-ourservices {
+        padding-top: 150px;
+        padding-bottom: 200px;
+        text-align: center;
+    }
+
+
+}

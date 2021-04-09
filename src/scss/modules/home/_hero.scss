@@ -1,0 +1,60 @@
+.hero {
+    &-details {
+        padding-top: 100px;
+    }
+
+    &-title {
+        font-size: 45px;
+        font-weight: 700;
+        color: $info;
+        margin-bottom: 20px;
+        animation: change-color 10s ease infinite;
+    }
+
+
+    &-desc {
+        font-size: 26px;
+        // color: $info;
+        margin-bottom: 50px;
+    }
+
+    &-slider {
+        .swiper-slide {
+            height: 460px;
+            .image{
+                max-height: 100%;
+            }
+        }
+    }
+
+}
+
+@keyframes change-color {
+    0% {
+        color: $tertiary;
+    }
+
+    10% {
+        color: $info;
+    }
+
+    30% {
+        color: $success;
+    }
+
+    50% {
+        color: $warning;
+    }
+
+    70% {
+        color: $secondary;
+    }
+
+    90% {
+        color: $primary;
+    }
+
+    100% {
+        color: $tertiary;
+    }
+}

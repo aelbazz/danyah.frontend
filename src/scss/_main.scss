@@ -14,7 +14,8 @@
 @import "vendors/dynamicBootstrap-4.3.1/bootstrap";
 @import "settings/bootstrapOverride";
 @import "vendors/Hover/base";
-// @import "vendors/fontawesome-free-5.15.1/base"; 
+$themeColor:$info;
+@import "vendors/swiper-6.5.5/base"; 
 
 
 // @import "vendors/swiper-4.5.0/swiper";
@@ -23,6 +24,7 @@
 // ### ===================================================================== ### // 
 // ### ============================  [ Layouts ] =========================== ### // 
 @import "layouts/layouts";                          // Ahmed Elbaz  - 7-11-2018 
+@import "layouts/home";                          // Ahmed Elbaz  - 7-11-2018 
 
 
 // ### ===================================================================== ### // 

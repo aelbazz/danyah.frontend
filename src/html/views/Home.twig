@@ -1,11 +1,37 @@
 {% extends "../layouts/layout.twig" %} 
+{# {% block head %}<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />{% endblock %}  #}
 {% block page %} 
 
 		<!-- Content  - ## START ##--> 
-	 
+		<div class="l-home">
+	 {% include '../modules/home/hero.twig' %}
 	 {% include '../modules/home/ourproducts.twig' %}
 	 {% include '../modules/home/ourservices.twig' %}
-
+</div>
 		<!-- Content  - ## END ##-->
+
+{% endblock %}
+{% block beforeEndBody %} 
+
+<script>
+         $(function(){
+            var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination', 
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+         })    
+			 
+          </script>
 
 {% endblock %}

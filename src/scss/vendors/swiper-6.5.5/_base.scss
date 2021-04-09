@@ -1,0 +1,22 @@
+$themeColor: #007aff !default;
+$colors: (
+  'white': #ffffff,
+  'black': #000000,
+) !default;
+@import "core";
+@import "swiper";
+
+
+// Components 
+@import "components/a11y";
+@import "components/controller";
+@import "components/effect-coverflow";
+@import "components/effect-cube";
+@import "components/effect-fade";
+@import "components/effect-flip";
+@import "components/lazy";
+@import "components/navigation";
+@import "components/pagination";
+@import "components/scrollbar";
+@import "components/thumbs";
+@import "components/zoom"; 
