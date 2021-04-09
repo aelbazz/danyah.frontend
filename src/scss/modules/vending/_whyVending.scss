@@ -1,0 +1,28 @@
+.l-why {
+    margin-bottom: 200px;
+
+    .desc {
+        font-size: 12px;
+    }
+}
+
+.why {
+    &-wrapper {
+        text-align: center;
+        padding-top: 50px;
+    }
+    &-cover {
+        width: 40px;
+        height: 40px;
+    }
+    &-title {
+        padding: 20px 0 15px;
+        font-size: 18px;
+        color: $dark;
+        font-weight: bold;
+    }
+    &-desc {
+        font-size: 12px;
+        color: $dark;
+    }
+}

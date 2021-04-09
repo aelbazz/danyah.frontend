@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="50px" width="50px" viewBox="0 0 73.681 43">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #f3d95a;
+      }
+
+      .cls-1 {
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_1022" data-name="Group 1022" transform="translate(-369.319 -1373)">
+    <g id="Ellipse_5" data-name="Ellipse 5" class="cls-1" transform="translate(400 1373)">
+      <circle class="cls-3" cx="21.5" cy="21.5" r="21.5"/>
+      <circle class="cls-4" cx="21.5" cy="21.5" r="19"/>
+    </g>
+    <path id="Path_407" data-name="Path 407" class="cls-2" d="M7264.025,1394.82h-21.707" transform="translate(-6871)"/>
+    <path id="Path_408" data-name="Path 408" class="cls-2" d="M7264.025,1394.82h-21.707" transform="translate(-6867 8)"/>
+    <path id="Path_409" data-name="Path 409" class="cls-2" d="M7264.025,1394.82h-21.707" transform="translate(-6864 16)"/>
+    <path id="Path_410" data-name="Path 410" class="cls-2" d="M7264.025,1394.82h-21.707" transform="translate(-6867 -8)"/>
+  </g>
+</svg>

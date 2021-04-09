@@ -1,7 +1,17 @@
 {% extends "../layouts/layout.twig" %} 
+{% import "../common/article.twig" as article %}
+
 {% block page %} 
 
 		<!-- Content  - ## START ##-->  
+
+		{{article.base("At Danyah we want to supply the market with high quality, state of the art vending machines that anybody can benefit from! "," We are very passionate in what we do and we believe that vending machines are excellent and convenient solutions for you, regardless of the location, whether in the office, malls, hospitals or even on the streets.<br/><br/>We offer our valued partners a wide range of vending products to choose from, and we want to make sure that our valued partners get the highest quality and latest technology of products and services in what we provide.")}}
+
+		{% include '../modules/vending/whyVending.twig' %}
+		{% include '../modules/vending/typesVending.twig' %}
+		{% include '../modules/vending/features.twig' %}
+		{% include '../modules/vending/afterSales.twig' %}
+
 		<!-- Content  - ## END ##-->
 
 

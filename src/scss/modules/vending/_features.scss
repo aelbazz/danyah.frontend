@@ -1,0 +1,58 @@
+.l-features {
+    margin-bottom: 200px;
+
+    .desc {
+        font-size: 18px;
+        color: $dark;
+    }
+}
+
+.features {
+    padding: 20px;
+    margin: 30px;
+    height:200px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+
+    &-wrapper{
+        padding: 30px;
+    }
+
+    &-title {
+        color: $light;
+        font-size: 18px;
+        margin-#{$left}: 10px;
+    }
+    &-desc {
+        font-size: 12px;
+        color: $dark;
+    }
+
+    &-coverLeft {
+        max-width: 22% ;
+        position: absolute;
+        bottom: 0px;
+        #{$left}: 5px;
+    }
+
+    &-coverRight {
+        max-width: 22% ;
+        position: absolute;
+        bottom: -5px;
+        #{$right}: 10px;
+    }
+    
+    &-content-left {
+        margin-#{$left}: 70px;
+        text-align: #{$left};
+    }
+
+    &-content-right {
+        margin-#{$right}: 70px;
+        text-align: #{$left};
+    }
+}
