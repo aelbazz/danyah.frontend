@@ -74,6 +74,10 @@
          background-color: $secondary;
      }
 
+     &.is-tertiary::before {
+         background-color: $tertiary;
+     }
+
      &.is-warning::before {
          background-color: $warning;
      }
