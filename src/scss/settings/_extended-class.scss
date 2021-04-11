@@ -41,8 +41,22 @@
  // }
 
  .mainContent {
-     padding-top: 130px;
      padding-bottom: 50px;
+     padding-top: 86px;
+
+     @include bp(md) {
+         padding-top: 130px;
+
+     }
+
+     @at-root .is-sticky_header .mainContent {
+         padding-top: 76px;
+
+         @include bp(md) {
+             padding-top: 130px;
+         }
+
+     }
  }
 
  .title {

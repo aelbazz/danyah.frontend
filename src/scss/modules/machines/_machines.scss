@@ -13,7 +13,7 @@
 
     &-cover {  
         height: 200px;
-        padding-right: 20px;
+        padding-#{$right}: 20px;
     }
 
     &-details{

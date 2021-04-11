@@ -1,26 +1,82 @@
+.l-article {
+    background: image("layouts/top-pattern.png") #{$right} -50px / contain no-repeat;
+    padding: 70px 20px 100px;
+
+    @include bp(sm) {
+        padding: 175px 50px 100px;
+    }
+
+    @include bp(md) {
+        padding: 240px 100px;
+    }
+
+    @include bp(lg) {
+        padding: 300px 150px;
+    }
+}
+
 .article {
-    max-width: 850px;
-    @media only screen and (max-width:768px) {
+    width: calc(100% - 20px);
+
+    @include bp(sm) {
+        width: calc(100% - 100px);
+    }
+
+    @include bp(md) {
         width: 80%;
     }
+
+    @include bp(lg) {
+        max-width: 850px;
+    }
+
+
     &-title {
         color: $tertiary;
-        font-size: 24px;
         font-weight: 400;
-        line-height: 36px;
-        margin-bottom: 80px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        font-size: 20px;
+
+        @include bp(xs) {
+            margin-bottom: 40px;
+            font-size: 22px;
+        }
+
+        @include bp(sm) {
+            font-size: 26px;
+            margin-bottom: 50px;
+        }
+
+        @include bp(md) {
+            font-size: 28px;
+            margin-bottom: 60px;
+        }
+
+        @include bp(lg) {
+            font-size: 32px;
+            margin-bottom: 80px;
+        }
     }
 
     &-desc {
         border-#{$left}: 5px solid $pallete1;
         padding-#{$left}: 25px;
-        line-height: 24px;
-        font-size: 16px;
+        line-height: 30px;
         font-weight: 400;
+        font-size: 16px;
+
+        @include bp(sm) {
+            font-size: 18px;
+        }
+
+        @include bp(md) {
+            font-size: 22px;
+        }
     }
-    span {
-        color: $primary;
-        font-weight: bold;
-        font-size: 18px;
+
+    .strong { 
+        font-weight: bold; 
+        font-size: 1.1em;
     }
 }

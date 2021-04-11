@@ -1,32 +1,64 @@
 $header-bg: #343F49;
 
 .is-sticky_header {
-    .header{
-        box-shadow: 0 2px 6px 3px rgba(#000000, .3) ;
+    .header {
+        box-shadow: 0 2px 6px 3px rgba(#000000, .3);
+        
+        @include breakpoint(md) { 
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+        &-logo {
+            .image { 
+                height: 50px; 
+            }
+    
+        }
     }
-    .header-logo .image {
-        height: 60px;
 
-    }
 }
 
 .header {
     position: fixed;
     z-index: 10;
     width: 100%;
-    padding: 0px 50px;
-    background-color: $header-bg; 
+    // height: 130px;
+    background-color: $header-bg;
+
+
+    @include breakpoint(xs) {
+        padding: 0px 10px;
+    }
+
+    @include breakpoint(sm) {
+        padding: 0px 25px;
+    }
+
+    @include breakpoint(md) {
+        padding: 30px 50px;
+    }
 
     &-logo {
         .image {
             @include trans();
-            height: 120px;
+            height: 60px;
+            display: inline-block;
         }
 
     }
 
     .navbar {
         padding: 0;
+    }
+
+    &-toggler {
+        border: 1px solid #fff;
+        padding: 5px;
+        @extend .btn;
+
+        .image {
+            width: 25px;
+        }
     }
 
     .navbar-nav {
@@ -76,8 +108,6 @@ $header-bg: #343F49;
                 &:focus {
                     color: $success;
                 }
-
-                ;
             }
         }
 
@@ -85,8 +115,8 @@ $header-bg: #343F49;
 
 }
 
-.header-menu.show {
-    position: absolute;
-    top: 50px;
-    background-color: darken($color: $header-bg, $amount: 10%);
-}
+// .header-menu.show {
+//     position: absolute;
+//     top: 50px;
+//     background-color: darken($color: $header-bg, $amount: 10%);
+// }
