@@ -3,16 +3,17 @@ $header-bg: #343F49;
 .is-sticky_header {
     .header {
         box-shadow: 0 2px 6px 3px rgba(#000000, .3);
-        
-        @include breakpoint(md) { 
-            padding-top: 3px;
-            padding-bottom: 3px;
+
+        @include breakpoint(md) {
+            padding-top: 8px;
+            padding-bottom: 8px;
         }
+
         &-logo {
-            .image { 
-                height: 50px; 
+            .image {
+                height: 50px;
             }
-    
+
         }
     }
 
@@ -24,25 +25,40 @@ $header-bg: #343F49;
     width: 100%;
     // height: 130px;
     background-color: $header-bg;
+    padding: 25px 10px;
 
 
-    @include breakpoint(xs) {
-        padding: 0px 10px;
-    }
+    @include breakpoint(xs) {}
 
     @include breakpoint(sm) {
-        padding: 0px 25px;
+        padding: 25px;
     }
 
     @include breakpoint(md) {
+        padding: 30px 0;
+    }
+
+    @include breakpoint(lg) {
         padding: 30px 50px;
     }
 
     &-logo {
+        padding: 0;
+
+        @include breakpoint(isCommon) {
+            position: absolute;
+            top: -5px;
+            right: 0;
+        }
+
         .image {
             @include trans();
-            height: 60px;
+            height: 50px;
             display: inline-block;
+
+            @include breakpoint(md) {
+                height: 70px;
+            }
         }
 
     }
@@ -63,14 +79,28 @@ $header-bg: #343F49;
 
     .navbar-nav {
         .nav-item {
-            margin-#{$left}: 40px;
+
+
+            margin-#{$left}: 20px;
+
+            @include breakpoint(lg) {
+                margin-#{$left}: 35px;
+            }
 
             .nav-link {
                 text-transform: capitalize;
-                font-size: 16px;
                 font-weight: 600;
                 color: #fff;
                 padding: 10px 0;
+                font-size: 16px;
+
+                @include breakpoint(md) {
+                    font-size: 13px;
+                }
+
+                @include breakpoint(lg) {
+                    font-size: 16px;
+                }
 
                 &:before {
                     background: $success;
@@ -81,6 +111,13 @@ $header-bg: #343F49;
                 .nav-link:not(.btn) {
                     color: $success;
                     font-size: 18px;
+                    @include breakpoint(md) {
+                        font-size: 14px;
+                    }
+    
+                    @include breakpoint(lg) {
+                        font-size: 18px;
+                    }
 
                     &:before {
                         content: none;

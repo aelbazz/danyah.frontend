@@ -7,54 +7,63 @@
     &-wrapper {
         width: 90%;
         padding: 20px;
-        margin: 0 auto 50px;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        margin: 0 auto 50px; 
+        border-radius: 8px; 
+        box-shadow: 0px 4px 6px 3px rgba(#000 , .16);
     }
 
-    &-cover {  
+    &-cover {
         height: 200px;
         padding-#{$right}: 20px;
     }
 
-    &-details{
-        color:$dark;
+    &-details {
+        color: $dark;
         text-align: center;
+
         img {
             width: 30px;
             height: 30px;
             display: block;
             margin: 10px auto 3px;
         }
+
         span {
             font-size: 12px;
             margin-bottom: 8px;
         }
     }
+
     &-title {
         font-size: 20px;
         margin-top: 10px;
         margin-bottom: 20px;
         text-align: #{$left};
     }
+
     &-desc {
         margin-bottom: 24px;
         font-size: 16px;
         text-align: #{$left};
     }
+
     &-one {
         border-#{$left}: 7px solid $pallete1;
     }
+
     &-two {
         border-#{$left}: 7px solid $info;
     }
+
     &-three {
         border-#{$left}: 7px solid $warning;
     }
+
     &-four {
         border-#{$left}: 7px solid $tertiary;
     }
+
     &-five {
         border-#{$left}: 7px solid $success;
     }
 }
- 

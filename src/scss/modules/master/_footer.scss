@@ -1,36 +1,101 @@
 .footer {
     background-color: rgb(219, 217, 214);
-    padding: 30px 60px 10px;
+    padding: 20px 25px 10px;
     font-size: 100%;
     color: rgb(51, 62, 72);
 
+    @include bp(sm) {
+        padding: 30px 60px 10px;
+    }
+
+    &-links {
+        .nav-item {
+            .nav-link {
+                padding-left: 0;
+                padding-right: 0;
+
+                &:before {
+                    background: $tertiary;
+                }
+            }
+        }
+
+
+    }
+
+    // ==============================
     &-copyright {
+        padding-top: 50px;
         text-align: center;
         font-size: 14px;
         color: rgb(51, 62, 72);
     }
 
+    // ==============================
     &-callIcon {
         height: 70px;
+    }
+
+    &-contactus {
+        padding-top: 20px;
+        text-align: $left;
+        padding-#{$left}: 75px;
+        position: relative;
+        margin-bottom: 15px;
+
+        .number {
+            font-size: 18px;
+            display: inline-block;
+            margin-bottom: 10px;
+            padding-top: 5px;
+            text-indent: 10px;
+            letter-spacing: 2px;
+        }
+
+    }
+
+    &-callIcon {
+        margin-#{$right}: 10px;
+        position: absolute;
+        #{$left}: 0;
     }
 
     &-social {
         display: flex;
         list-style: none;
-        &-item {}
+        padding-#{$left}: 20px;
+        margin-bottom: 10px;
+
+        &-item {
+            margin-right: 12px;
+        }
 
         &-link {
+
             display: inline-block;
-            
-            .image{
-                width: 25px; 
+
+            .image {
+                width: 25px;
             }
         }
     }
 
+    &-data {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include bp(xs) {
+            flex-direction: row;
+        }
+    }
+    
     &-logo {
         margin-top: 20px;
-
+        text-align: center;
+        @include bp(xs) {
+            text-align: $right;
+        }
         .image {
             height: 75px;
             display: inline-block;

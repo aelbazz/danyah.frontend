@@ -1,10 +1,12 @@
 .l-features {
-    margin-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 200px;
 
     .desc {
         font-size: 18px;
         color: $dark;
     }
+    
 }
 
 .features {
@@ -16,6 +18,9 @@
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    @at-root .is-vending .features{
+        box-shadow: 0 -5px 6px 2px rgba(#000 , .24);
+    }
     
 
     &-wrapper{

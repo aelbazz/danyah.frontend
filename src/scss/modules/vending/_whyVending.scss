@@ -1,8 +1,9 @@
 .l-why {
-    margin-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 200px;
 
     .desc {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -22,7 +23,7 @@
         font-weight: bold;
     }
     &-desc {
-        font-size: 12px;
+        font-size: 14px;
         color: $dark;
     }
 }
