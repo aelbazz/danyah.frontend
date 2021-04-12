@@ -1,0 +1,16 @@
+.l-contact{
+    background: image("layouts/top-pattern.png") #{$right} -50px / contain no-repeat;
+    padding: 70px 20px 100px;
+
+    @include bp(sm) {
+        padding: 175px 50px 100px;
+    }
+
+    @include bp(md) {
+        padding: 240px 100px;
+    }
+
+    @include bp(lg) {
+        padding: 300px 150px;
+    }
+}
