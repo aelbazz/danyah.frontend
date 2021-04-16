@@ -2,12 +2,14 @@
     padding-top: 100px;
     padding-bottom: 200px;
 
-    .desc {
-        font-size: 14px;
-    }
 }
 
 .why {
+    &-desc {
+        font-size: 16px;
+        color: $dark;
+        text-align: center;
+    }
     &-wrapper {
         text-align: center;
         padding-top: 50px;
@@ -22,8 +24,8 @@
         color: $dark;
         font-weight: bold;
     }
-    &-desc {
-        font-size: 14px;
+    &-brief {
+        font-size: 16px;
         color: $dark;
     }
 }

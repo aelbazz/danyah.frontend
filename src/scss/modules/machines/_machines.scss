@@ -2,24 +2,56 @@
     margin-bottom: 100px;
 }
 
-.machines {
-    text-align: center;
-    &-wrapper {
-        width: 90%;
-        padding: 20px;
-        margin: 0 auto 50px; 
-        border-radius: 8px; 
-        box-shadow: 0px 4px 6px 3px rgba(#000 , .16);
+.machineCard {
+
+    width: 95%;
+    padding: 30px;
+    margin: 0 auto 50px;
+    border-radius: 8px;
+    box-shadow:  0 2px 5px 0  rgba(#000, .08);
+    background-color: #fff;
+
+    //  =======================  status 
+    &-pallete1 .machineCard-details {
+        border-#{$left}-color: $pallete1;
     }
 
+    &-info .machineCard-details {
+        border-#{$left}-color: $info;
+    }
+
+    &-warning .machineCard-details {
+        border-#{$left}-color: $warning;
+    }
+
+    &-tertiary .machineCard-details {
+        border-#{$left}-color: $tertiary;
+    }
+
+    &-success .machineCard-details {
+        border-#{$left}-color: $success;
+    }
+
+    // ===============
     &-cover {
-        height: 200px;
-        padding-#{$right}: 20px;
+        text-align: center;
+
+        .image {
+            height: 200px;
+            padding-#{$right}: 20px;
+        }
     }
 
     &-details {
+
         color: $dark;
         text-align: center;
+        padding-#{$left}: 22px;
+
+        @include bp(sm) {
+            text-align: $left;
+            border-#{$left}: 7px solid;
+        }
 
         img {
             width: 30px;
@@ -27,43 +59,24 @@
             display: block;
             margin: 10px auto 3px;
         }
+    }
 
-        span {
-            font-size: 12px;
-            margin-bottom: 8px;
-        }
+    &-icon {
+        font-size: 12px;
+        margin-bottom: 8px;
+        text-align: center;
     }
 
     &-title {
         font-size: 20px;
         margin-top: 10px;
         margin-bottom: 20px;
-        text-align: #{$left};
     }
 
     &-desc {
         margin-bottom: 24px;
         font-size: 16px;
-        text-align: #{$left};
     }
 
-    &-one {
-        border-#{$left}: 7px solid $pallete1;
-    }
 
-    &-two {
-        border-#{$left}: 7px solid $info;
-    }
-
-    &-three {
-        border-#{$left}: 7px solid $warning;
-    }
-
-    &-four {
-        border-#{$left}: 7px solid $tertiary;
-    }
-
-    &-five {
-        border-#{$left}: 7px solid $success;
-    }
 }

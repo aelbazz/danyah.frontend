@@ -21,11 +21,20 @@
     &-slider {
         .swiper-slide {
             height: 460px;
-            .image{
+            background-color: transparent;
+
+            .image {
                 max-height: 100%;
             }
         }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: calc(100% - 25px);
+        }
+
     }
+
 
 }
 

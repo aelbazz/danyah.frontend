@@ -5,59 +5,111 @@
     .desc {
         font-size: 18px;
         color: $dark;
+        margin-bottom: 75px;
     }
-    
+
 }
 
 .features {
     padding: 20px;
-    margin: 30px;
-    min-height:200px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    @at-root .is-vending .features{
-        box-shadow: 0 -5px 6px 2px rgba(#000 , .24);
-    }
+    margin-bottom: 50px;
     
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 6px 8px 0px 0px rgba(#000, .24);
 
-    &-wrapper{
-        padding: 30px;
+    @include bp(sm) {
+        min-height: 330px;
+    }
+    @include bp(md) {
+        min-height: 240px;
+    }
+    // ==============  status
+    &.features-left {
+        @include bp(md) {
+            margin-#{$right}: 40px;
+        }
+
+        .features {
+            &-cover {
+                #{$left}: -16px;
+            }
+
+            &-content {
+                @include bp(md) {
+                    margin-#{$left}: 45px;
+                    text-align: #{$left};
+                }
+
+            }
+        }
+
+    }
+
+    &.features-right {
+        @include bp(md) {
+            margin-#{$left}: 40px;
+        }
+
+        .features {
+            &-cover {
+                #{$right}: -16px;
+            }
+
+            &-content {
+
+                @include bp(md) {
+                    margin-#{$right}: 45px;
+                    text-align: #{$left};
+                }
+            }
+        }
+    }
+
+
+    // ======================
+
+
+    &-wrapper {
+
+        @include bp(md) {
+            padding: 30px;
+        }
     }
 
     &-title {
-        color: $light;
-        font-size: 18px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
         margin-#{$left}: 10px;
     }
+
     &-desc {
-        font-size: 12px;
+        font-size: 14px;
         color: $dark;
     }
 
-    &-coverLeft {
-        max-width: 22% ;
+    &-cover {
+        max-width: 22%;
         position: absolute;
-        bottom: 0px;
-        #{$left}: 5px;
+        bottom: -18px;
+        opacity: 0.8;
     }
 
-    &-coverRight {
-        max-width: 22% ;
-        position: absolute;
-        bottom: -5px;
-        #{$right}: 10px;
-    }
-    
-    &-content-left {
-        margin-#{$left}: 70px;
-        text-align: #{$left};
+
+    &-content {
+        position: relative;
+        padding: 10px 30px;
+        @include bp(sm) {
+            
+            padding: 10px;
+        }
+        @include bp(md) {
+            padding: 10px 30px;
+        }
     }
 
-    &-content-right {
-        margin-#{$right}: 70px;
-        text-align: #{$left};
-    }
+
 }

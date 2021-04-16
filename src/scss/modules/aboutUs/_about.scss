@@ -3,68 +3,70 @@
 }
 
 .about {
-    
+
 
     &-minTitle {
         font-size: 12px;
         margin-bottom: 2px;
-        margin-#{$left}: 60px ;
+        margin-#{$left}: 60px;
     }
 
     &-title {
-        margin-#{$left}: 60px ;
+        margin-#{$left}: 60px;
         font-size: 22px;
         font-weight: bold;
         padding: 5px 0px;
     }
-    
-    
+
+
 
     &-details {
         margin-bottom: 100px;
     }
 
-    &-cover { 
-        width: 60px; 
+    &-cover {
+        width: 60px;
         height: auto;
         float: #{$left};
-        margin-#{$right}: 10px ;
+        margin-#{$right}: 10px;
     }
 
     &-desc {
-        margin-#{$left}: 80px ;
+        margin-#{$left}: 80px;
         font-size: 16px;
         font-weight: 400;
         text-align: justify;
     }
 
 }
+
 .cards {
     margin: 50px 30px;
     background: $dark;
-    min-height: 200px;
+    min-height: 220px;
     text-align: center;
     padding: 40px;
     color: $light;
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    position: relative;
 
-    &-cover{
+    &-cover {
         width: 100px;
         height: auto;
         position: absolute;
-        #{$left}:5px;
+        #{$left}: -35px;
+        top: 25px;
+        opacity: 90%;
     }
+
     &-title {
-        font-size: 22px;
-        margin-bottom: 20px;
+        font-size: 28px;
+        margin-bottom: 25px;
     }
+
     &-desc {
-        font-size: 14px;
+        font-size: 15px;
         margin-top: 10px;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 }

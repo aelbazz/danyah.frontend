@@ -75,9 +75,18 @@
          width: 300px;
          height: 6px;
          background-color: rgb(149, 201, 61);
-         left: 50%;
+         #{$left}: 50%;
          transform: translateX(-50%);
 
+     }
+
+     &.title-left {
+         text-align: $left;
+
+         &::before {
+             #{$left}: 0;
+             transform: translateX(0);
+         }
      }
 
      &.is-primary::before {
