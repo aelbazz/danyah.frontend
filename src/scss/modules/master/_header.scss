@@ -26,7 +26,8 @@ $header-bg: #343F49;
     // height: 130px;
     background-color: $header-bg;
     padding: 25px 10px;
-
+    max-height: 100%; 
+    overflow-y: auto;
 
     @include breakpoint(xs) {}
 
