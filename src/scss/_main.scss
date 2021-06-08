@@ -14,11 +14,11 @@
 @import "vendors/dynamicBootstrap-4.3.1/bootstrap";
 @import "settings/bootstrapOverride";
 @import "vendors/Hover/base";
-$themeColor:$info;
+$themeColor:$secondary;
 @import "vendors/swiper-6.5.5/base"; 
-
-
-// @import "vendors/swiper-4.5.0/swiper";
+@import "vendors/animate"; 
+$flagsImagePath: $branding-path + "images/intlTelInput/";
+@import "vendors/intlTelInput/base"; 
 
 
 // ### ===================================================================== ### // 

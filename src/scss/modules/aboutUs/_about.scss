@@ -49,6 +49,7 @@
     color: $light;
     border-radius: 20px;
     position: relative;
+    overflow: hidden;
 
     &-cover {
         width: 100px;
@@ -57,6 +58,10 @@
         #{$left}: -35px;
         top: 25px;
         opacity: 90%;
+        @include reverse {
+            transform: scaleX(-1);
+        }
+        
     }
 
     &-title {

@@ -16,7 +16,10 @@
 
     &-cover { 
         height: 220px;
+        // box-shadow:  0 0 0 #000;
+        @include trans();
         &:hover{
+            box-shadow:  0 0 0 #000;
         transform: scale(1.1); 
         }
     }

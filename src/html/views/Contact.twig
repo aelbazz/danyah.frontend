@@ -52,6 +52,11 @@
                 </div>
               </div>
               <div class="col-md-3 mb-3">
+                <label for="validationServerTel">Phone</label> 
+                <input type="tel" class="form-control " id="validationServerTel"   required="" maxlength="10" >
+               
+              </div>
+              <div class="col-md-3 mb-3">
                 <label for="validationServer05">Zip</label>
                 <input type="text" class="form-control is-invalid" id="validationServer05"
                   aria-describedby="validationServer05Feedback" required="">
@@ -86,3 +91,36 @@
 {% include '../modules/contactus/map.twig' %}
 
 {% endblock %}
+
+{% block beforeEndBody %} 
+{# <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script> #}
+<script> 
+   var phone_number =  intlTelInput(document.querySelector("#validationServerTel"), {
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      preferredCountries: ['sa'],
+      initialCountry:'sa',
+      utilsScript: "assets/js/utils.js",
+    });
+    console.log("init ", phone_number.getNumber())
+    
+    </script>
+  {% endblock %}
