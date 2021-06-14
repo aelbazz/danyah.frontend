@@ -1,0 +1,55 @@
+.counter_section {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+    display: table;
+    vertical-align: middle;
+}
+
+.counter_section_inner {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgba(35, 35, 35, 0.47);
+}
+
+.counter_box {
+    color: #ffffff;
+    margin: 25px auto 15px;
+}
+
+.counter_icon {
+    font-size: 48px;
+    color: #ffffff; 
+    margin-bottom: 10px;
+    text-align: center;
+    .image{
+        max-width: 60px;
+    }
+}
+
+.counter_number {
+    color: $info;
+    font-size: 38px;
+    margin: 20px 0;
+    font-weight: 400; 
+}
+
+.counter_name {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+@media all and (max-width:400px) {
+    .counter_name {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .counter_box {
+        min-height: 200px;
+    }
+}

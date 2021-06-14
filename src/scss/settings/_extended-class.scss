@@ -72,11 +72,14 @@
          display: block;
          position: absolute;
          top: 100%;
-         width: 300px;
+         width: 120px;
          height: 6px;
          background-color: rgb(149, 201, 61);
          #{$left}: 50%;
-         transform: translateX(-50%);
+         transform: translateX( $minus * - 50%);
+         @include bp(md){
+             width: 300px;
+         }
 
      }
 

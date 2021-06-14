@@ -19,7 +19,10 @@
     }
 
     .tab-content {
-        padding: 40px;
+        padding:15px 20px;
+        @include bp(md) {
+            padding: 40px;
+        }
     }
 }
 
@@ -27,24 +30,33 @@
 
 .types {
 
-    padding: 30px;
+    padding: 15px;
+    @include bp(md) {
+        padding: 30px;
+    }
 
     &-brief {
         font-size: 18px;
         line-height: 24px;
-        padding: 30px;
         color: #838b92;
         text-align: center;
         max-width: 800px;
         margin: 0 auto 30px;
+        padding: 15px;
+        @include bp(md) {
+            padding: 30px;
+        }
     }
 
     &-wrapper {
-        margin-top: 100px;
         text-align: center;
         box-shadow: 0 2px 7px 2px rgba(#000, .1);
         border-radius: 12px;
-
+        
+        margin-top: 30px;
+        @include bp(md) {
+            margin-top: 100px;
+        }
         .nav-tabs {
             border: none;
 

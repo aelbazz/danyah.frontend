@@ -1,10 +1,16 @@
 .l-benefits {
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 60px;
+    @include bp(md) {
+        padding-bottom: 200px;
+    }
 }
 
 .benefits {
-    padding: 10px 50px;
+    @include bp(md) {
+        padding: 10px 50px;
+    }
+    
     &-wrapper {
         text-align: center;
     }

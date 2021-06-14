@@ -67,7 +67,7 @@
         margin-bottom: 10px;
 
         &-item {
-            margin-right: 12px;
+            margin-#{$right}: 12px;
         }
 
         &-link {

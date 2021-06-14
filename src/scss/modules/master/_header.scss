@@ -50,7 +50,7 @@ $header-bg: #343F49;
         @include breakpoint(isCommon) {
             position: absolute;
             top: -5px;
-            right: 0;
+            #{$right}: 0;
         }
 
         .image {

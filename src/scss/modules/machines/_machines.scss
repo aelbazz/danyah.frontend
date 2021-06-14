@@ -13,23 +13,23 @@
 
     //  =======================  status 
     &-pallete1 .machineCard-details {
-        border-#{$left}-color: $pallete1;
+        border-color: $pallete1;
     }
 
     &-info .machineCard-details {
-        border-#{$left}-color: $info;
+        border-color: $info;
     }
 
     &-warning .machineCard-details {
-        border-#{$left}-color: $warning;
+        border-color: $warning;
     }
 
     &-tertiary .machineCard-details {
-        border-#{$left}-color: $tertiary;
+        border-color: $tertiary;
     }
 
     &-success .machineCard-details {
-        border-#{$left}-color: $success;
+        border-color: $success;
     }
 
     // ===============
@@ -47,9 +47,10 @@
         color: $dark;
         text-align: center;
         padding-#{$left}: 22px;
-
+        border-top: 7px solid;
         @include bp(sm) {
             text-align: $left;
+            border-top:0;
             border-#{$left}: 7px solid;
         }
 
