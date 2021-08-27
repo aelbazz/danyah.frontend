@@ -26,15 +26,15 @@ $header-bg: #343F49;
     // height: 130px;
     background-color: $header-bg;
     padding: 25px 10px;
-    max-height: 100%; 
+    max-height: 100%;
     overflow-y: auto;
-    
+
     @include breakpoint(xs) {}
-    
+
     @include breakpoint(sm) {
         padding: 25px;
     }
-    
+
     @include breakpoint(md) {
         overflow-y: visible;
         padding: 30px 0;
@@ -85,12 +85,18 @@ $header-bg: #343F49;
 
             margin-#{$left}: 20px;
 
+            @include breakpoint(md) {
+                margin-#{$left}: 25px;
+            }
+
             @include breakpoint(lg) {
                 margin-#{$left}: 35px;
             }
 
             .nav-link {
                 text-transform: capitalize;
+                white-space: nowrap;
+
                 font-weight: 600;
                 color: #fff;
                 padding: 10px 0;
@@ -113,10 +119,11 @@ $header-bg: #343F49;
                 .nav-link:not(.btn) {
                     color: $success;
                     font-size: 18px;
+
                     @include breakpoint(md) {
                         font-size: 14px;
                     }
-    
+
                     @include breakpoint(lg) {
                         font-size: 18px;
                     }
