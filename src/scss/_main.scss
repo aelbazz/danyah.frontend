@@ -19,6 +19,7 @@ $themeColor:$secondary;
 @import "vendors/animate"; 
 $flagsImagePath: $branding-path + "images/intlTelInput/";
 @import "vendors/intlTelInput/base"; 
+@import "vendors/toastr"; 
 
 
 // ### ===================================================================== ### // 

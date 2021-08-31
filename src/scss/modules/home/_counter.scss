@@ -22,10 +22,11 @@
 
 .counter_icon {
     font-size: 48px;
-    color: #ffffff; 
+    color: #ffffff;
     margin-bottom: 10px;
     text-align: center;
-    .image{
+
+    .image {
         max-width: 60px;
     }
 }
@@ -35,12 +36,20 @@
     font-size: 38px;
     margin: 20px 0;
     font-weight: 400; 
+    @include reverse() {
+        direction: ltr;
+    }
+
 }
 
 .counter_name {
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize;
+}
+
+.counter_number_digits {
+    vertical-align: middle;
 }
 
 @media all and (max-width:400px) {
